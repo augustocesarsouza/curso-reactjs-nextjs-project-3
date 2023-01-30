@@ -1,4 +1,4 @@
-import { screen } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
 import { Heading } from '.';
 import { renderTheme } from '../../styles/render-theme';
@@ -88,5 +88,9 @@ describe('<Heading />', () => {
     const h6 = container.querySelector('h6');
 
     expect(h6.tagName.toLowerCase()).toBe('h6');
+  });
+  it('should render snapshot', () => {
+    const { container } = renderTheme(<Heading>texto</Heading>);
+    expect(container).toMatchSnapshot();
   });
 });
