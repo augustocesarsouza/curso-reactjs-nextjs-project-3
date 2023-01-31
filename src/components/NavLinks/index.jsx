@@ -5,7 +5,7 @@ import { MenuLink } from '../MenuLink';
 // vou receber os objetos link newtab children "Nav pai dos links"
 export const NavLinks = ({ links = [] }) => {
   return (
-    <Styled.Container>
+    <Styled.Container aria-label="Main menu">
       {links.map((link) => (
         <MenuLink key={link.link} {...link} />
       ))}
