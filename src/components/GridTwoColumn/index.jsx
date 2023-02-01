@@ -6,13 +6,14 @@ import { Heading } from '../Heading';
 import { TextComponent } from '../TextComponent';
 
 // section-two-columns - do strapi
-
 export const GridTwoColumn = ({ title, text, srcImg, background = false }) => {
   return (
     <SectionBackground background={background}>
       <Styled.Container background={background}>
         <Styled.textContainer>
-          <Heading uppercase>{title}</Heading>
+          <Heading uppercase colorDark={!background} as="h2">
+            {title}
+          </Heading>
           <TextComponent>{text}</TextComponent>
         </Styled.textContainer>
         <Styled.ImageContainer>
