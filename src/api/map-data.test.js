@@ -8,6 +8,8 @@ describe('map-data', () => {
     expect(pagesData.footerHtml).toBe('');
     expect(pagesData.slug).toBe('');
     expect(pagesData.title).toBe('');
+    expect(pagesData.sections).toEqual([]);
+    expect(pagesData.menu.links).toEqual([]);
   });
 
   it('should map data if there are data', () => {

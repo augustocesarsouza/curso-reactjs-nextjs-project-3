@@ -1,7 +1,7 @@
 import ReactDOM from 'react-dom/client';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from './styles/global-styles';
-import Home from './templates/App';
+import Home from './templates/Home';
 import { theme } from './styles/theme';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

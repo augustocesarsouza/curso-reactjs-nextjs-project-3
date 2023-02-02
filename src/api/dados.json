@@ -5,6 +5,8 @@
       "attributes": {
         "title": "Olha só a minha página",
         "slug": "olha-so-a-minha-pagina",
+        "createdAt": "2023-01-29T14:08:41.973Z",
+        "updatedAt": "2023-02-02T16:16:10.439Z",
         "publishedAt": "2023-01-29T14:23:40.038Z",
         "footer_text": "Feito com ❤ por Otávio Miranda",
         "sections": [
@@ -67,17 +69,17 @@
               {
                 "id": 1,
                 "title": "Teste 1",
-                "Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.\n\n"
+                "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.\n\n"
               },
               {
                 "id": 2,
                 "title": "Teste 2",
-                "Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.\n\n"
+                "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.\n\n"
               },
               {
                 "id": 3,
                 "title": "Teste 3",
-                "Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.\n\n"
+                "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis cum delectus molestias. Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde, reprehenderit minus ad dolores provident maiores.\n\n"
               }
             ],
             "image_grid": [],
@@ -86,6 +88,51 @@
               "name": "grid-one",
               "section_id": "grid-one",
               "background": true
+            }
+          },
+          {
+            "id": 3,
+            "__component": "section.section-grid",
+            "title": "GALLERY",
+            "description": "Uma breve descrição.\n\n",
+            "text_grid": [],
+            "image_grid": [
+              {
+                "id": 11,
+                "alternativeText": "random image",
+                "url": "https://source.unsplash.com/random/360x360?r=1"
+              },
+              {
+                "id": 12,
+                "alternativeText": "random image 2",
+                "url": "https://source.unsplash.com/random/360x360?r=2"
+              },
+              {
+                "id": 13,
+                "alternativeText": "random image 3",
+                "url": "https://source.unsplash.com/random/360x360?r=3"
+              },
+              {
+                "id": 14,
+                "alternativeText": "random image 4",
+                "url": "https://source.unsplash.com/random/360x360?r=4"
+              },
+              {
+                "id": 15,
+                "alternativeText": "random image 5",
+                "url": "https://source.unsplash.com/random/360x360?r=5"
+              },
+              {
+                "id": 16,
+                "alternativeText": "random image 6",
+                "url": "https://source.unsplash.com/random/360x360?r=6"
+              }
+            ],
+            "metadata": {
+              "id": 6,
+              "name": "gallery",
+              "section_id": "gallery",
+              "background": false
             }
           }
         ],
