@@ -6,9 +6,9 @@ import { Heading } from '../Heading';
 import { TextComponent } from '../TextComponent';
 
 // section-two-columns - do strapi
-export const GridTwoColumn = ({ title, text, srcImg, background = false }) => {
+export const GridTwoColumns = ({ title, text, srcImg, background = false, sectionId = '' }) => {
   return (
-    <SectionBackground background={background}>
+    <SectionBackground background={background} sectionId={sectionId}>
       <Styled.Container background={background}>
         <Styled.textContainer>
           <Heading uppercase colorDark={!background} as="h2">
@@ -24,9 +24,10 @@ export const GridTwoColumn = ({ title, text, srcImg, background = false }) => {
   );
 };
 
-GridTwoColumn.propTypes = {
+GridTwoColumns.propTypes = {
   title: P.string.isRequired,
   text: P.string.isRequired,
   srcImg: P.string.isRequired,
   background: P.bool,
+  sectionId: P.string,
 };

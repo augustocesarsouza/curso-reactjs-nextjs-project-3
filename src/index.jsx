@@ -3,11 +3,16 @@ import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from './styles/global-styles';
 import Home from './templates/Home';
 import { theme } from './styles/theme';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <ThemeProvider theme={theme}>
-    <Home />
+    <BrowserRouter>
+      <Routes>
+        <Route path="*" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
     <GlobalStyles />
   </ThemeProvider>,
 );
